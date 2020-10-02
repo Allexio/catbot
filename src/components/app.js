@@ -1,5 +1,5 @@
 import React from 'react'
-import Todo from './todo'
+import Bot_list from './bot_list'
 
 /**
  * App
@@ -7,7 +7,7 @@ import Todo from './todo'
  */
 const App = () => (
   <div className="App">
-    <Todo />
+    <Bot_list />
   </div>
 )
 

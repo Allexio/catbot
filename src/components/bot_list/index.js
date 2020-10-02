@@ -9,9 +9,9 @@ import store from '../../store'
 
 import { task } from './actions'
 
-const Todo = ({ data }) => {
+const bot_list = ({ data }) => {
   return (
-    <div className="Todo">
+    <div className="bot_list">
       <FormGroup>
         {data.map(item => <Item
           key={item.id}
@@ -38,24 +38,24 @@ class Item extends Component {
 
   render() {
     const { item } = this.props
-    const { checked, title } = item
+    const { checked, name } = item
 
     return <FormControlLabel
       control={
         <Checkbox
         onClick={this.onHandleClick}
         checked={checked}
-        name={title}/>
+        name={name}/>
       }
-      label={title}
+      label={name}
     />
   }
 }
 
 const mapStateToProps = state => ({
-  data: state.todo
+  data: state.bot_list
 })
 
 export default connect(
   mapStateToProps
-)(Todo)
+)(bot_list)

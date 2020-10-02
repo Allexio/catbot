@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import todo from './components/todo/reducer'
+import bot_list from './components/bot_list/reducer'
 
 const reducers = {
-  todo
+  bot_list
 }
 
 export default combineReducers(reducers)

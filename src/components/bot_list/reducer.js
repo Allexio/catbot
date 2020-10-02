@@ -2,16 +2,12 @@ import { actionTypes } from './actions'
 
 const initialState = [{
   id: '12626',
-  title: 'Dormir',
-  checked: false
-}, {
-  id: '13326',
-  title: 'Manger',
-  checked: false
-}, {
-  id: '626',
-  title: 'EPITA',
-  checked: false
+  name: 'Bengal',
+  checked: true 
+},{
+  id: 'test',
+  name: 'Tom',
+  checked: true 
 }]
 
 /**
