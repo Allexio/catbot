@@ -1,2 +1,2 @@
 # catbot
-catbot react assignment
+chatbot react assignment
